@@ -51,6 +51,7 @@ public class Admin extends Model<Admin> {
 
     private String remark;
 
+    @TableField(exist = false)
     private List<Room> roomlist;
     @Override
     protected Serializable pkVal() {
